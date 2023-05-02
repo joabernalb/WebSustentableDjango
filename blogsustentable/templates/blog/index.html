@@ -1,0 +1,225 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+
+
+	{% block content %}   
+
+	<section id="seccion1">
+		<img class="logobody" src="{% static 'imagenes/logo-MyB1.png' %}" alt="">
+		<button class="boton-contacto"><a href="#seccionintermedia3"  >Contactenos</a></button>
+	</section>
+
+
+
+
+
+	<section id="seccion3">
+        <div class="row">
+          <div class="col-12 col-lg-6 col-xl-6">
+              <div class="p-5">
+                  <img src="{% static 'imagenes/nuevamision.jpg' %}" alt="Misión" class="image">
+                  <h2 class="" align="left">Mision</h2>
+                  <p class="text-justify parrafo">
+                      Proveer al mercado nacional de una alternativa con tecnología sustentable, para el desarrollo de soluciones amigables con el Medio Ambiente.
+                  </p>
+              </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-6">
+              <div class="p-5">
+                  <img src="{% static 'imagenes/nuevavision.jpg' %}" alt="Visión" class="image">
+                  <h2 class="" align="left">Vision</h2>
+                  <p class="text-justify parrafo">
+                      Transformar a nuestra empresa en referente en el manejo de buenas prácticas, respetuosas del Medio Ambiente y del ambiente laboral.
+                  </p>
+              </div>
+          </div>
+          </div>
+      </section>
+
+
+
+
+	  <!-- AREA NUEVA RESPONSIVA -->
+	  <section id="seccionintermedia">
+			<div class="row">
+				<div class="col-lg-12 col-md-8 col-sm-4 col-xs-12">
+					<div class="p-2">
+						<h2 class="" align="center">Ofrecemos los mejores servicios</h2>
+					</div>
+				</div>
+			</div>
+	  </section>
+
+	  <section id="seccion5">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">
+				<div class="p-2">
+					<div class="card">
+						<img class="imgcard" src="{% static 'imagenes/WILSONTEST.png' %}" alt="Avatar">
+						<div class="container">
+						  <h5><b>Mantenimiento a edificios e instalaciones.</b></h5>
+						  <p></p>
+						  <button class="btn" class="mi-enlace"><a href="service1.html">Ver más</a></button>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">
+				<div class="p-2">
+					<div class="card">
+						<img class="imgcard" src="{% static 'imagenes/WILSONTEST.png' %}" alt="Avatar">
+						<div class="container">
+						  <h5><b>Servicios de Pinturas, Carpintería y Gasfitería</b></h5>
+						  <p></p>
+						  <button class="btn"  class="mi-enlace"><a href="service2.html" >Ver más</a></button>
+						</div>
+					  </div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">
+				<div class="p-2">
+					<div class="card">
+						<img class="imgcard" src="{% static 'imagenes/WILSONTEST.png' %}" alt="Avatar">
+						<div class="container">
+						  <h5><b>Limpieza y Aseo de Fachadas, Bodegas</b></h5>
+						  <p></p>
+						  <button class="btn" class="mi-enlace"><a href="service3.html">Ver más</a></button>
+						</div>
+					  </div>
+				</div>
+			</div>			
+		</div>
+	  </section>
+
+
+		<!-- AREA BASTIAN REPLICA-->
+
+		<section id="seccionintermedia2">
+			<div class="row">
+				<div class="col-lg-12 col-md-8 col-sm-4 col-xs-12">
+					<div class="p-2">
+						<h1 class="" align="center">Algunos de nuestros clientes</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="areacarrousel">
+		<div class="contenedor">
+
+		<div class="carousel">
+			<div class="carousel__contenedor">
+				<button aria-label="Anterior" class="carousel__anterior">
+					<i class="fas fa-chevron-left"></i>
+				</button>
+
+				<div class="carousel__lista">
+					<div class="carousel__elemento">
+						<img src="{% static 'imagenes/Codelco_logo.png' %}" alt="Codelco">
+					</div>
+					<div class="carousel__elemento">
+						<img src="{% static 'imagenes/csmpc_logo.png' %}" alt="csmc">
+					</div>
+					<div class="carousel__elemento">
+						<img src="{% static 'imagenes/aquagen_icono.png' %}" alt="relleno">
+					</div>
+					<div class="carousel__elemento">
+						<img src="{% static 'imagenes/bancochile_logo.png' %}" alt="relleno">
+					</div>
+	
+					<div class="carousel__elemento">
+						<img src="{% static 'imagenes/Colun_Logo.png' %}" alt="relleno">
+					</div>
+					<div class="carousel__elemento">
+						<img src="{% static 'imagenes/eurofarma_logo.png' %}" alt="relleno">
+					</div>
+					<div class="carousel__elemento">
+						<img src="{% static 'imagenes/salmonchile_logo.png' %}" alt="relleno">
+					</div>
+					<div class="carousel__elemento">
+						<img src="{% static 'imagenes/sqm_logo.png' %}" alt="relleno">
+					</div>
+				</div>
+
+				<button aria-label="Siguiente" class="carousel__siguiente">
+					<i class="fas fa-chevron-right"></i>
+				</button>
+			</div>
+
+			<div role="tablist" class="carousel__indicadores"></div>
+		</div>
+
+		</div>
+	</section>
+
+
+
+		<section id="seccionintermedia3">
+			<div class="row">
+				<div class="col-lg-12 col-md-8 col-sm-4 col-xs-12">
+					<div class="p-2">
+						<h1 class="" align="center">Contactenos!</h1>
+						<h5 class="" align="center">Brindamos un servicio amigable con la naturaleza</h5>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="seccionubicacion">
+		
+		<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+				<div class="p-5" >
+					<p>Datos de contacto</p>
+					<p>+56 9 42268652</p>
+					<p>ventas@sustentablemyb.com</p>
+					<p>2 Poniente 355</p>
+					<p>Oficina 52</p>
+					<p>Punta Arenas</p>
+				</div>
+			</div>
+				<div class="col-lg-8 col-md-6 col-sm-6 col-xs-12">
+				<div class="p-5" >
+				<div class="map-responsive">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9574.075161936124!2d-70.8761141513054!3d-53.13678331481253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdb26411cefeecb1%3A0xea4966ca5bf3d013!2sDos%20Ote%2C%20Punta%20Arenas%2C%20Magallanes%20y%20la%20Ant%C3%A1rtica%20Chilena!5e0!3m2!1ses-419!2scl!4v1681406669259!5m2!1ses-419!2scl" 
+					width="900" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				</div>
+				</div>
+		
+		</div>
+		
+		
+	
+	</section>
+
+
+
+
+
+
+		<script>
+	function mostrarMensaje() {
+		var mensaje = document.getElementById("mensaje");
+		mensaje.style.opacity = "1";
+		mensaje.style.visibility = "visible";
+	}
+	</script>
+
+	<script>
+	function ocultarMensaje() {
+		var mensaje = document.getElementById("mensaje");
+		mensaje.style.opacity = "0";
+		mensaje.style.visibility = "hidden";
+	}
+	</script>
+	 
+	
+	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="{% static 'js/app.js'%}"></script>
+
+
+	{% endblock %}
