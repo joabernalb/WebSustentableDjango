@@ -1,36 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'blog/base.html' %}
+{% load static %}
 
-<head>
-    <title>CSS Website Layout</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/services.css">
-    <link rel="stylesheet" href="css/style.css">
+    {% block content %}   
+
+
+    <link rel="stylesheet" href="{% static 'css/services.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
 
 
-<body>
-    <header>
-        <!-- Menú -->
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <a class="enlace" href="index.html">
-                <img id="iconomenu" src="imagenes/logoMenu.png" alt="">
-            </a>
-            <ul>
-                <li><a class="active" href="index.html">Inicio</a></li>
-                <li><a href="#Noticias">Noticias</a></li>
 
 
-            </ul>
-        </nav>
-
-    </header>
 
     <div class="header">
         <h1>Mantenimiento de edificios e instalaciones.</h1>
@@ -76,43 +57,13 @@
 
         <div class="col-lg-3 col-md-8 col-sm-4 col-xs-12">
             <div class="p-1">
-                <img src="imagenes/WILSONTEST.png" alt="">
+                <img src="{% static 'imagenes/WILSONTEST.png' %}" alt="">
         </div>
     </div>
 
     </div>
-</section>
+    </section>
 
 
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
-                <figure>
-                    <a href="#">
-                        <img src="imagenes/logo2.svg" alt="Logo de SLee Dw">
-                    </a>
-                </figure>
-            </div>
-            <div class="box">
-                <h2>LOREM</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
-            </div>
-            <div class="box">
-                <h2>SIGUENOS</h2>
-                <div class="red-social">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-youtube"></a>
-                </div>
-            </div>
-        </div>
-        <div class="grupo-2">
-            <small>&copy; 2023 <b>OxiK</b> - Todos los Derechos Reservados.</small>
-        </div>
-    </footer>
 
-</body>
-
-</html>
+	{% endblock %}

@@ -8,6 +8,9 @@ IMAGE_FILE_TYPES = ['png', 'jpg', 'jpeg']
 def index(request):
     return render(request, 'blog/index.html', {})
 
+def service1(request):
+    return render(request, 'blog/service1.html', {})
+
 
 # def post_list(request):
 #     return render(request, 'blog/post_list.html', {})

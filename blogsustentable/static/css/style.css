@@ -502,8 +502,8 @@ h1 {
   ul{
       position: fixed;
       width: 100%;
-      height: 100vh;
-      background: #60cae2;
+      height: 500px;
+      background: #60cae2;                       /*#60cae2*/
       top: 80px;
       left: -100%;
       text-align: center;
