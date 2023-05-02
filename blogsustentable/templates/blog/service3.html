@@ -1,41 +1,11 @@
-{% extends 'blog/index.html' %}
+{% extends 'blog/base.html' %}
 {% load static %}
 
 {% block content %} 
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>CSS Template</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/services.css">
-</head>
-
-<body>
-    <header>
-        <!-- Menú -->
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <a class="enlace" href="index.html">
-                <img id="iconomenu" src="imagenes/logoMenu.png" alt="">
-            </a>
-            <ul>
-                <li><a class="active" href="index.html">Inicio</a></li>
-                <li><a href="#Noticias">Noticias</a></li>
-
-
-            </ul>
-        </nav>
-
-    </header>
+    <link rel="stylesheet" href="{% static 'css/services.css' %}">
 
     <div class="header">
         <h1>Servicio Generales de limpieza e Pinturas.</h1>
@@ -43,7 +13,7 @@
     
       <div class="row container">
         <div class="column">
-          <img id="foto3" src="Images/Mantencion.jpg" alt="">
+          <img id="foto3" src="{% static 'Images/Mantencion.jpg' %}" alt="">
         </div>
     
         <div class="column">
@@ -77,14 +47,14 @@
         </div>
     
         <div class="column">
-          <img id="foto3" src="Images/Gasfiteria-carpinteria-pintura.png" alt="">
+          <img id="foto3" src="{% static 'Images/Gasfiteria-carpinteria-pintura.png' %}" alt="">
     
         </div>
       </div>
     
       <div class="row container">
         <div class="column">
-          <img id="foto3" src="Images/servicio-limpieza.png" alt="">
+          <img id="foto3" src="{% static 'Images/servicio-limpieza.png' %}" alt="">
         </div>
     
         <div class="column">
@@ -100,9 +70,5 @@
     
         </div>
       </div>
-
-</body>
-
-</html>
 
 {% endblock %}

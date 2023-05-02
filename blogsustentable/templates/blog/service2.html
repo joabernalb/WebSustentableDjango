@@ -3,13 +3,6 @@
 
 {% block content %} 
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>CSS Website Layout</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/services.css">
 
 <body>
@@ -32,7 +25,7 @@
                 menos una
                 vez al
                 año, para evitar la acumulación de barro, oxido, etc., en los radiadores.</p>
-            <img src="Images/radiador.png" alt="">
+            <img src="{% static 'Images/radiador.png' %}" alt="">
         </div>
 
         <div class="column">
@@ -80,22 +73,9 @@
                 apego a esta
                 pauta.
             </p>
-            <img src="Images/generador.png" alt="">
+            <img src="{% static 'Images/generador.png' %}" alt="">
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-</body>
-
-</html>
 
 {% endblock %}
