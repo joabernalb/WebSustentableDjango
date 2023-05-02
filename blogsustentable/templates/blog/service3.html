@@ -1,3 +1,8 @@
+{% extends 'blog/index.html' %}
+{% load static %}
+
+{% block content %} 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,40 +37,72 @@
 
     </header>
 
-    <div class="row">
-        <div class="col-lg-12 col-md-8 col-sm-4 col-xs-12">
-            <div class="p-2">
-                <h1 class="" align="center">Servicio Generales de limpieza e Pinturas.</h1>
-            </div>
+    <div class="header">
+        <h1>Servicio Generales de limpieza e Pinturas.</h1>
+      </div>
+    
+      <div class="row container">
+        <div class="column">
+          <img id="foto3" src="Images/Mantencion.jpg" alt="">
         </div>
-    </div>
-
-
-
-    <div class="content content-1">
-        <p>
-            1.- Mantenimiento a edificios e instalaciones. Podemos proporcionar, en caso de ser solicitado,
-            servicios de aseo,
-            lavado de vidrios, limpieza techos y canaleta, etc.
-
-        </p>
-    </div>
-    <div class="content content-2">
-        <p>
-            2.- Servicios de pinturas, carpinteria, Gasfiteria, etc. Si el cliente lo solicita podemos proporcionar
-            servicios de
-            reparacion de esquemas de pintura, reparacion de puertas y ventanas, cambio de vidrios, mantencion de
-            califonts y
-            calentadores a gas, etc.
-        </p>
-    </div>
-    <div class="content content-3">
-        <p>3.- Limpieza y aseo de fachadas, bodegas y otro. Servicio de aseo, limpieza y lavado de fachadas, con
-            hidro
-            lavadora.
-        </p>
-    </div>
+    
+        <div class="column">
+          <h2>Mantenimiento a edificios e instalaciones</h2>
+          <p>
+            estos servicios de limpieza son muy útiles para mantener la higiene y la limpieza en diferentes
+            espacios. El servicio de aseo puede incluir la limpieza de diferentes áreas, el lavado de vidrios es ideal para
+            mantener cristales y ventanas limpias, y la limpieza de techos y canaletas ayuda a evitar problemas de
+            filtraciones. Estos servicios pueden ser contratados de forma regular o puntual, dependiendo de las necesidades
+            del cliente. Es importante contar con profesionales especializados en estos servicios para obtener resultados de
+            calidad y seguros.
+          </p>
+    
+        </div>
+      </div>
+    
+      <div class="row container">
+        <div class="column">
+          <h2>Servicios de pinturas, carpinteria, Gasfiteria, etc</h2>
+          <p>
+            estos servicios de reparación y mantenimiento pueden ser muy útiles para los clientes que necesitan solucionar
+            problemas en sus hogares o empresas. El servicio de reparación de esquemas de pintura es ideal para corregir
+            problemas de pintura dañada o mal aplicada. La reparación de puertas y ventanas ayuda a solucionar problemas de
+            cierre o apertura, y el cambio de vidrios puede ser necesario en caso de rotura o daño. La mantención de
+            califonts y calentadores a gas es importante para garantizar su funcionamiento adecuado y evitar problemas de
+            seguridad. Estos servicios pueden ser contratados de forma puntual o como parte de un plan de mantenimiento
+            regular, y es importante contar con profesionales especializados en cada área para obtener resultados de calidad
+            y seguros.
+          </p>
+    
+        </div>
+    
+        <div class="column">
+          <img id="foto3" src="Images/Gasfiteria-carpinteria-pintura.png" alt="">
+    
+        </div>
+      </div>
+    
+      <div class="row container">
+        <div class="column">
+          <img id="foto3" src="Images/servicio-limpieza.png" alt="">
+        </div>
+    
+        <div class="column">
+          <h2>Limpieza y aseo de fachadas, bodegas y otro</h2>
+          <p>
+            El servicio de aseo, limpieza y lavado de fachadas con hidrolavadora es muy útil para mantener la apariencia y
+            la limpieza de edificios, viviendas y empresas. La hidrolavadora permite limpiar fachadas y paredes exteriores
+            con alta presión de agua, lo que permite eliminar suciedad, moho, manchas y otros elementos que se acumulan con
+            el tiempo. Este servicio puede incluir la limpieza de paredes, techos, superficies de concreto, ladrillos,
+            piedra y otros materiales. Es importante contar con profesionales especializados en este tipo de limpieza para
+            garantizar resultados de calidad y seguros, y para evitar dañar la estructura o acabados de la fachada.
+          </p>
+    
+        </div>
+      </div>
 
 </body>
 
 </html>
+
+{% endblock %}

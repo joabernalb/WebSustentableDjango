@@ -5,6 +5,9 @@ from .models import Post
 IMAGE_FILE_TYPES = ['png', 'jpg', 'jpeg']
 
 
+def service(request):
+    return render(request, 'blog/service1.html', {})
+
 def index(request):
     return render(request, 'blog/index.html', {})
 
