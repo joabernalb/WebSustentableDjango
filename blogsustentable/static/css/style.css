@@ -223,12 +223,12 @@ overflow-x: hidden;
 
 #Servicio2Part2{
 
-  background-color: #bd13ac;
+  background-color: white;
 }
 
 #Servicio2Part3{
 
-  background-color: #75e321;
+  background-color: #429af1;
 }
 
 
@@ -492,7 +492,7 @@ h1 {
 @media (max-width : 768px){
 
   .boton-contacto{                                     /*Media querys para el tamaño responsivo del boton*/
-
+    display: block;
     padding: 5px 85px;
   }
 
