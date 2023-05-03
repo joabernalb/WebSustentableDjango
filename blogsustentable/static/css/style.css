@@ -91,8 +91,10 @@ li a.active, li a:hover{
 #iconomenu{
   max-width: 120px;                      /*Propiedad tamaño del icono del menu*/
   height: auto;
-  
 }
+
+
+
 
 
 #seccion1 {
@@ -211,6 +213,28 @@ overflow-x: hidden;
   background-color: #13a1bd;
   overflow-x: hidden; 
 }
+
+
+#Servicio2Part1{
+
+  background-color: #13a1bd;
+}
+
+
+#Servicio2Part2{
+
+  background-color: #bd13ac;
+}
+
+#Servicio2Part3{
+
+  background-color: #75e321;
+}
+
+
+
+
+
 
 .map-responsive{
 
@@ -502,8 +526,8 @@ h1 {
   ul{
       position: fixed;
       width: 100%;
-      height: 500px;
-      background: #60cae2;                       /*#60cae2*/
+      height: 100vh;
+      background: #60cae2;
       top: 80px;
       left: -100%;
       text-align: center;

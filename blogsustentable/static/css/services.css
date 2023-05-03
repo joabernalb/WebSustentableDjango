@@ -52,7 +52,65 @@ body {
 
 .textoservicios{
     text-align: justify;
+    animation:moverderecha 2s 1;
+    animation-fill-mode: forwards;
+
 }
+
+@keyframes moverderecha {
+    from{
+        transform: translateX(-100px);
+    }to{
+        transform: translate(5px);
+    }
+}
+
+.textoservicios2{
+    text-align: justify;
+    animation:moverizquierda 2s 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes moverizquierda {
+    from{
+        transform: translateX(100px);
+    }to{
+        transform: translate(5px);
+    }
+}
+
+
+
+
+#foto1 {
+    max-width: 100%;
+    /* la imagen se ajusta al ancho del contenedor */
+    height: auto;
+    /* la altura de la imagen se ajusta automáticamente para mantener la proporción */
+    animation:moverderecha 2s 1;
+    animation-fill-mode: forwards;
+}
+
+#foto2 {
+    width: 100%;
+    /* la imagen se ajusta al ancho del contenedor */
+    height: auto;
+    /* la altura de la imagen se ajusta automáticamente para mantener la proporción */
+    animation:moverizquierda 2s 1;
+    animation-fill-mode: forwards;
+    
+}
+
+#foto3 {
+    width: 80%;
+    /* la imagen se ajusta al ancho del contenedor */
+    height: auto;
+    /* la altura de la imagen se ajusta automáticamente para mantener la proporción */
+}
+
+
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:600px) {
