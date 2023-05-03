@@ -11,6 +11,9 @@ def index(request):
 def service1(request):
     return render(request, 'blog/service1.html', {})
 
+def service2(request):
+    return render(request, 'blog/service2.html', {})
+
 
 # def post_list(request):
 #     return render(request, 'blog/post_list.html', {})
