@@ -526,7 +526,7 @@ h1 {
   ul{
       position: fixed;
       width: 100%;
-      height: 100vh;
+      height: 400px;
       background: #60cae2;
       top: 80px;
       left: -100%;
