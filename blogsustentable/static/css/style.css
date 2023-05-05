@@ -223,15 +223,29 @@ overflow-x: hidden;
 
 #Servicio2Part2{
 
-  background-color: white;
+  background-color: #bd13ac;
 }
 
 #Servicio2Part3{
 
+  background-color: #75e321;
+}
+
+#Servicio3Part1{
+
   background-color: #429af1;
 }
 
+#Servicio3Part2{
 
+  background-color: #60cae2;
+}
+
+#seccionintermediaservicio{
+  color: #e7bcbc;
+
+  background-color: #92c8f1;
+}
 
 
 
@@ -492,7 +506,7 @@ h1 {
 @media (max-width : 768px){
 
   .boton-contacto{                                     /*Media querys para el tamaño responsivo del boton*/
-    display: block;
+
     padding: 5px 85px;
   }
 
@@ -526,7 +540,7 @@ h1 {
   ul{
       position: fixed;
       width: 100%;
-      height: 400px;
+      height: 100vh;
       background: #60cae2;
       top: 80px;
       left: -100%;

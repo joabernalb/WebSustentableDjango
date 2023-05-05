@@ -1,71 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'blog/base.html' %}
+{% load static %}
 
-<head>
-    <title>CSS Template</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/services.css">
-</head>
+{% block content %}   
 
-<body>
-    <header>
-        <!-- Menú -->
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <a class="enlace" href="index.html">
-                <img id="iconomenu" src="imagenes/logoMenu.png" alt="">
-            </a>
-            <ul>
-                <li><a class="active" href="index.html">Inicio</a></li>
-                <li><a href="#Noticias">Noticias</a></li>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="{% static 'css/services.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-
-            </ul>
-        </nav>
-
-    </header>
-
+  <section id="seccionintermediaservicio">
     <div class="row">
-        <div class="col-lg-12 col-md-8 col-sm-4 col-xs-12">
-            <div class="p-2">
-                <h1 class="" align="center">Servicio Generales de limpieza e Pinturas.</h1>
-            </div>
+      <div class="col-lg-12 col-md-8 col-sm-4 col-xs-12">
+        <div class="p-2">
+          <h1 class="" align="center">Servicio Generales de limpieza e Pinturas.</h1>
         </div>
+      </div>
     </div>
+  </section>
+
+  <section id="Servicio3Part1">
+  <div class="row">
+        <div class="col-lg-4 col-md-8 col-sm-4 col-xs-12">
+          <div class="p-3">
+              <img id="foto1" src="{% static 'Images/Mantencion.jpg' %}" alt="">
+           </div>
+        </div>
+
+        <div class="col-lg-8 col-md-8 col-sm-4 col-xs-12">
+          <div class="p-3">
+          <h2>Mantenimiento a edificios e instalaciones</h2>
+          <p class="textoservicios">
+            Estos servicios de limpieza son muy útiles para mantener la higiene y la limpieza en diferentes
+            espacios. El servicio de aseo puede incluir la limpieza de diferentes áreas, el lavado de vidrios es ideal para
+            mantener cristales y ventanas limpias, y la limpieza de techos y canaletas ayuda a evitar problemas de
+            filtraciones. Estos servicios pueden ser contratados de forma regular o puntual, dependiendo de las necesidades
+            del cliente. Es importante contar con profesionales especializados en estos servicios para obtener resultados de
+            calidad y seguros.
+          </p>
+          </div>
+        </div>
+
+  </div>
+  </section>
+
+
+      <section id="Servicio3Part2">
+        <div class="row">
+          <div class="col-lg-6 col-md-8 col-sm-4 col-xs-12">
+            <div class="p-3">
+              <h2>Servicios de pinturas, carpinteria, Gasfiteria, etc</h2>
+              <p class="textoservicios">
+                Estos servicios de reparación y mantenimiento pueden ser muy útiles para los clientes que necesitan solucionar
+                problemas en sus hogares o empresas. El servicio de reparación de esquemas de pintura es ideal para corregir
+                problemas de pintura dañada o mal aplicada. La reparación de puertas y ventanas ayuda a solucionar problemas de
+                cierre o apertura, y el cambio de vidrios puede ser necesario en caso de rotura o daño. La mantención de
+                califonts y calentadores a gas es importante para garantizar su funcionamiento adecuado y evitar problemas de
+                seguridad. Estos servicios pueden ser contratados de forma puntual o como parte de un plan de mantenimiento
+                regular, y es importante contar con profesionales especializados en cada área para obtener resultados de calidad
+                y seguros.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-8 col-sm-4 col-xs-12">
+            <div class="p-3">
+                <img id="foto1" src="{% static 'Images/Gasfiteria-carpinteria-pintura.png' %}" alt="">
+             </div>
+          </div>
+
+        </div>
+      </section>
 
 
 
-    <div class="content content-1">
-        <p>
-            1.- Mantenimiento a edificios e instalaciones. Podemos proporcionar, en caso de ser solicitado,
-            servicios de aseo,
-            lavado de vidrios, limpieza techos y canaleta, etc.
 
-        </p>
-    </div>
-    <div class="content content-2">
-        <p>
-            2.- Servicios de pinturas, carpinteria, Gasfiteria, etc. Si el cliente lo solicita podemos proporcionar
-            servicios de
-            reparacion de esquemas de pintura, reparacion de puertas y ventanas, cambio de vidrios, mantencion de
-            califonts y
-            calentadores a gas, etc.
-        </p>
-    </div>
-    <div class="content content-3">
-        <p>3.- Limpieza y aseo de fachadas, bodegas y otro. Servicio de aseo, limpieza y lavado de fachadas, con
-            hidro
-            lavadora.
-        </p>
-    </div>
 
-</body>
+      <section id="Servicio3Part2">
 
-</html>
+          <div class="row">
+            <div class="col-lg-6 col-md-8 col-sm-4 col-xs-12">
+              <div class="p-3">
+                  <img id="foto1" src="{% static 'Images/servicio-limpieza.png' %}" alt="">
+               </div>
+            </div>
+            <div class="col-lg-5 col-md-8 col-sm-4 col-xs-12">
+              <div class="p-3">
+                <h2>Limpieza y aseo de fachadas, bodegas y otro</h2>
+                <p class="textoservicios">
+                  El servicio de aseo, limpieza y lavado de fachadas con hidrolavadora es muy útil para mantener la apariencia y
+                  la limpieza de edificios, viviendas y empresas. La hidrolavadora permite limpiar fachadas y paredes exteriores
+                  con alta presión de agua, lo que permite eliminar suciedad, moho, manchas y otros elementos que se acumulan con
+                  el tiempo. Este servicio puede incluir la limpieza de paredes, techos, superficies de concreto, ladrillos,
+                  piedra y otros materiales. Es importante contar con profesionales especializados en este tipo de limpieza para
+                  garantizar resultados de calidad y seguros, y para evitar dañar la estructura o acabados de la fachada.
+                </p>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      {% endblock %}

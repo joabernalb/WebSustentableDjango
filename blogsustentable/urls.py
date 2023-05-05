@@ -10,4 +10,5 @@ urlpatterns = [
     path('post_list.html', views.post_list, name='post_list'),
     path('service1.html', views.service1, name='service1'),
     path('service2.html', views.service2, name='service2'),
+    path('service3.html', views.service3, name='service3'),
 ]   + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
