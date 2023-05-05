@@ -373,25 +373,29 @@ overflow-x: hidden;
 
 
 .mi-enlace {
-  color: rgb(246, 246, 246);                           /*Enlace no funciona aun*/
+  color: rgb(255, 255, 255);                           /*Enlace no funciona aun*/
   /* Color del texto del enlace */
-  text-decoration: none;
+  border-radius: 5px;
   /* Quita el subrayado del enlace */
 }
 
+
 #btn {
-  background-color: #f4511e;                           /*PROPIEDADES DEL BOTON FUNCIONA PERO ESTA BACK Y HAY QUE MOVERLO*/
+  background-color: #ffffff;                           /*PROPIEDADES DEL BOTON FUNCIONA PERO ESTA BACK Y HAY QUE MOVERLO*/
   border: none;
-  color: rgb(202, 64, 64);
+  color: rgb(255, 255, 255);
   padding: 8px 15px;
   text-align: center;
   font-size: 16px;
   margin: 4px 2px;
   opacity: 0.6;
   transition: 0.3s;
+  text-decoration: none;
 }
 
-#btn:hover {opacity: 2}
+#btn:hover {
+  opacity: 2
+}
 
 .content {                                             /*Acomoda el contenido de las cartas*/
   width: 400px;
