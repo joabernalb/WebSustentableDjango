@@ -16,6 +16,18 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
+            name='Administrador',
+            fields=[
+                ('Name', models.CharField(max_length=250)),
+                ('Rut', models.CharField(max_length=12, primary_key=True, serialize=False)),
+                ('Email', models.EmailField(max_length=250, verbose_name='User Mail')),
+            ],
+        ),
+        
+        
+        
+        
+        migrations.CreateModel(
             name='Post',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
