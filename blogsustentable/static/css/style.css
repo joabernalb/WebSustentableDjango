@@ -211,12 +211,12 @@ overflow-x: hidden;
 
 #Servicio2Part2{
 
-  background-color: #bd13ac;
+  background-color: #ffffff;
 }
 
 #Servicio2Part3{
 
-  background-color: #75e321;
+  background-color: #13a1bd;
 }
 
 #Servicio3Part1{
@@ -226,15 +226,17 @@ overflow-x: hidden;
 
 #Servicio3Part2{
 
-  background-color: #60cae2;
+  background-color: #429af1;
 }
 
 #seccionintermediaservicio{
-  color: #e7bcbc;
-
-  background-color: #92c8f1;
+  background-color: #225c6e;
+  color: #efefef;
 }
 
+.titulos{
+  color: #efefef;
+}
 
 
 
