@@ -49,7 +49,6 @@ def post_edit(request, pk):
             post = form.save(commit=False)
             post.author = request.user
             post.published_date = timezone.now()
-            post.cover = request.FILES['cover']
             post.save()
             return redirect('post_detail', pk=post.pk)
     else:
