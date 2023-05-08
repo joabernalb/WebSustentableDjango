@@ -5,9 +5,28 @@
 
 	{% block content %}   
 
-	<section id="seccion1">
-		<img class="logobody" src="{% static 'imagenes/logo-MyB1.png' %}" alt="">
-		<button class="boton-contacto"><a href="#seccionintermedia3"  >Contactenos</a></button>
+	<section id="seccion1">		
+
+		<div class="row">
+			<div class="col-lg-12 col-md-8 col-sm-4 col-xs-12">					<!-- RELLENO INVISIBLE -->
+				<div class="p-5">
+				</div>
+			</div>
+		</div>
+
+	<div style="text-align: center;">
+		<img src="{% static 'imagenes/loguito.png' %}" alt="Descripción de la imagen" style="max-width: 100%;">
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12 col-md-8 col-sm-4 col-xs-12">						<!-- RELLENO INVISIBLE -->
+			<div class="p-5">
+			</div>
+		</div>
+	</div>
+
+	<button class="boton-contacto"><a href="#seccionintermedia3"  >Contactenos</a></button>
+
 	</section>
 
 
@@ -18,7 +37,7 @@
         <div class="row">
           <div class="col-12 col-lg-6 col-xl-6">
               <div class="p-5">
-                  <img src="{% static 'imagenes/nuevamision.jpg' %}" alt="Misión" class="image">
+                  <img src="{% static 'imagenes/mision.png' %}" alt="Misión" class="image">
                   <h2 class="" align="left">Mision</h2>
                   <p class="text-justify parrafo">
                       Proveer al mercado nacional de una alternativa con tecnología sustentable, para el desarrollo de soluciones amigables con el Medio Ambiente.
@@ -27,7 +46,7 @@
           </div>
           <div class="col-12 col-lg-6 col-xl-6">
               <div class="p-5">
-                  <img src="{% static 'imagenes/nuevavision.jpg' %}" alt="Visión" class="image">
+                  <img src="{% static 'imagenes/vision.png' %}" alt="Visión" class="image">
                   <h2 class="" align="left">Vision</h2>
                   <p class="text-justify parrafo">
                       Transformar a nuestra empresa en referente en el manejo de buenas prácticas, respetuosas del Medio Ambiente y del ambiente laboral.
@@ -54,11 +73,11 @@
 	  <section id="seccion5">
 		<div class="row">
 			<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">
-				<div class="p-2">
+				<div class="p-3">
 					<div class="card">
-						<img class="imgcard" src="{% static 'imagenes/WILSONTEST.png' %}" alt="Avatar">
+						<img class="imgcard" src="{% static 'imagenes/edificios.png' %}" alt="Avatar">
 						<div class="container">
-						  <h5><b>Mantenimiento a edificios e instalaciones.</b></h5>
+						  <h6><b>Mantenimiento a edificios e instalaciones.</b></h6>
 						  <p></p>
 						  <button id="btn" class="mi-enlace"><a href="{% url 'service1'  %}">Ver más</a></button>
 					</div>
@@ -66,11 +85,11 @@
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">
-				<div class="p-2">
+				<div class="p-3">
 					<div class="card">
-						<img class="imgcard" src="{% static 'imagenes/WILSONTEST.png' %}" alt="Avatar">
+						<img class="imgcard" src="{% static 'imagenes/pinturas.png' %}" alt="Avatar">
 						<div class="container">
-						  <h5><b>Servicios de Pinturas, Carpintería y Gasfitería</b></h5>
+						  <h6><b>Servicios de Pinturas, Carpintería y Gasfitería</b></h6>
 						  <p></p>
 						  <button id="btn"  class="mi-enlace"><a href="{% url 'service2'  %}">Ver más</a></button>
 						</div>
@@ -78,11 +97,11 @@
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">
-				<div class="p-2">
+				<div class="p-3">
 					<div class="card">
-						<img class="imgcard" src="{% static 'imagenes/WILSONTEST.png' %}" alt="Avatar">
+						<img class="imgcard" src="{% static 'imagenes/limpieza.png' %}" alt="Avatar">
 						<div class="container">
-						  <h5><b>Limpieza y Aseo de Fachadas, Bodegas</b></h5>
+						  <h6><b>Limpieza y Aseo de Fachadas, Bodegas</b></h6>
 						  <p></p>
 						  <button id="btn" class="mi-enlace"><a href="{% url 'service3'  %}">Ver más</a></button>
 						</div>
