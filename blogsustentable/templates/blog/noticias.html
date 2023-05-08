@@ -7,30 +7,48 @@
         
         <section id="servicio1color">
              
-                    <div class="col-lg-7 col-md-8 col-sm-4 col-xs-12">
-                        <div class="p-4">
+                {% for post in posts %} {{ post }}{% endfor %}
 
-                                {% for post in posts %}
-                        <div>
-                                <p id="titulo-post"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></p>
-                                <p id="fecha-post"> publicado: {{ post.published_date }}</p>
-                                <br>
+                                {% comment %} {% for post in posts %}
                                 <div>
+                                <p><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></p>
+                                <p> publicado: {{ post.published_date }}</p>
+                                <br>
+                                </div>
                                 <p>{{ post.text|linebreaksbr }}</p> 
                                 <p><img src="{{ post.cover.url}}" style="max-width: 100%; height: auto;"  alt="No subio imagen"></p>
                                 <a href="{% url 'post_detail' pk=post.pk %}">Comentarios: {{ post.comments.count }}</a>
-                                </div>
-                                </div>
-                                {% endfor %}
-                        </div>
-                        </div>
+                                {% endfor %} {% endcomment %}
+                       
 
 
 
-                </section>
+        </section>
 
 
+                <script>
+                        function openForm() {
+                            document.getElementById("myForm").style.display = "block";
+                        }
+                
+                        function closeForm() {
+                            document.getElementById("myForm").style.display = "none";
+                        }
+                    </script>
 
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+                    <script>
+                        $(document).ready(function() {
+                            $("#myInput").on("keyup", function() {
+                                var value = $(this).val().toLowerCase();
+                                $("#myTable tr").filter(function() {
+                                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                                });
+                            });
+                        });
+                    </script>
                         
 
         {% endblock %}
