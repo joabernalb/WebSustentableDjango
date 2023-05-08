@@ -1,0 +1,50 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+
+
+        {% block content %}
+        {% csrf_token %}
+        <div style="display: flex; justify-content: center; margin: auto; height: 300px;width: 80%;padding: 20px;">
+        <form  method="POST" action="{% url 'registrar' %}">
+                <!-- {{ form.as_p }} -->
+                 {% csrf_token %}
+                    <div class="input-container">
+                     <p>Nombre de Usuario</p>   
+                    <div id="user" class="infield">{{form.username}}</div>
+                    </div>
+        
+                   <div class="input-container"> 
+                        <p>Contraseña</p>  
+                    <div id="psw" class="infield">{{form.password1}}</div>
+                   </div>
+        
+                    <div class="input-container"> 
+                            <p>Repita Contraseña</p>
+                    <div id="psw" class="infield">{{form.password2}}</div>
+                     </div>
+
+  
+                
+        
+        
+                
+                <button class="btn" style="background-color:white; color:blue">Registrar</button>
+                <input type="hidden" name="next" value="{{ next }}" />
+            </form>
+        </div>
+
+    
+
+    <div class="vacio" style="height: 500px"></div>
+    
+
+              
+
+        <style>
+        input{height: 90%;} 
+        </style>
+    
+    {% endblock %} 
+
+

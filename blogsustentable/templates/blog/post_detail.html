@@ -1,0 +1,23 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+
+
+                {% block content %}
+
+
+                    <div class="post" style="background-color: rgb(0, 0, 0);padding: 15px;">
+                        {% if post.published_date %}
+                                <p id="fecha-post" style="color: aliceblue; font-size: 85%;"> publicado: {{ post.published_date }}</p>
+                        {% endif %}
+                        <p id="titulo-post" style="color: rgb(242, 214, 255); font-size: 180%;"><a>{{ post.title }}</a></p>
+                        <div>
+                            <p style="color: aliceblue; font-size: 85%;">{{ post.text|linebreaksbr }}</p> 
+                        </div>
+                        
+                    </div>
+
+
+
+
+                {% endblock %}

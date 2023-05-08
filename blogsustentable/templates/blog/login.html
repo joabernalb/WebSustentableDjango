@@ -1,0 +1,37 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+       
+
+    {% block content %}     
+       
+    <div style="display: flex; justify-content: center; margin: auto; height: 300px;width: 80%;padding: 20px;">
+            <form  method="POST" action="{% url 'Login' %}">
+                        {% csrf_token %}
+                        <div class="input-container">
+                         <p>Nombre de Usuario</p>   
+                        <div id="user" class="infield">{{form.username}}</div>
+                        </div>
+            
+                       <div class="input-container"> 
+                            <p>Contraseña</p>  
+                        <div id="psw" class="infield">{{form.password}}</div>
+                       </div>
+      
+                    
+            
+            
+                    
+                       <button class="btn" style="background-color:white; color:blue" type="submit" href="{% url 'index' %}" >Iniciar sesion</button>
+                       Si no estas registrado puedes hacerlo aqui <a href="{% url 'registrar' %}" target="blank"><strong>Registrar</strong></a>
+                       <input type="hidden" name="next" value="{{ next }}" />
+                </form>
+            </div>
+            <div class="vacio" style="height: 500px"></div>
+       
+       
+       
+       
+       
+      
+       {% endblock %} 

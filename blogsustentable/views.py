@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from django.utils import timezone
-from .models import Post
-from .forms import PostForm
+from .models import Post 
+from .forms import PostForm, CommentForm
+from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import redirect, get_object_or_404
+from django.contrib.auth import login
 
 IMAGE_FILE_TYPES = ['png', 'jpg', 'jpeg']
 
@@ -64,3 +66,32 @@ def post_remove(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.delete()
     return redirect('noticias')
+
+
+def add_comment_to_post(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    if request.method == "POST":
+        form = CommentForm(request.POST)
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.post = post
+            comment.save()
+            return redirect('post_detail', pk=post.pk)
+    else:
+        form = CommentForm()
+    return render(request, 'blog/add_comment_to_post.html', {'form': form})
+
+
+def registrar(request):
+    form = UserCreationForm()
+    form.fields['username'].help_text = None
+    form.fields['password1'].help_text = None
+    form.fields['password2'].help_text = None
+    if request.method == "POST":
+        form = UserCreationForm(data=request.POST)
+        if form.is_valid():
+            user = form.save()
+            if user is not None:
+                login(request, user)
+                return redirect('/')
+    return render(request, "blog/registrar.html", {'form': form})
