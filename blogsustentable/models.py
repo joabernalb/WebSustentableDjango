@@ -1,6 +1,5 @@
 from django.conf import settings
 from django.db import models
-from django.db.models import Model
 from django.utils import timezone
 
 
@@ -12,7 +11,7 @@ class Post(models.Model):
             default=timezone.now)
     published_date = models.DateTimeField(
             blank=True, null=True)
-    cover = models.ImageField(upload_to='Images/')
+    cover = models.ImageField(upload_to='images/')
 
     def publish(self):
         self.published_date = timezone.now()

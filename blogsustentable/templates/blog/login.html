@@ -5,7 +5,7 @@
 
     {% block content %}     
        
-    <div style="display: flex; justify-content: center; margin: auto; height: 300px;width: 80%;padding: 20px;">
+     <div style="display: flex; justify-content: center; margin: auto; height: 300px;width: 80%;padding: 20px;">
             <form  method="POST" action="{% url 'Login' %}">
                         {% csrf_token %}
                         <div class="input-container">
@@ -26,7 +26,10 @@
                        Si no estas registrado puedes hacerlo aqui <a href="{% url 'registrar' %}" target="blank"><strong>Registrar</strong></a>
                        <input type="hidden" name="next" value="{{ next }}" />
                 </form>
-            </div>
+    </div>
+
+
+
             <div class="vacio" style="height: 500px"></div>
        
        

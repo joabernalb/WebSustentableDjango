@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='post',
             name='cover',
-            field=models.ImageField(default=django.utils.timezone.now, upload_to='imagenes/'),
+            field=models.ImageField(default=django.utils.timezone.now, upload_to='images/'),
             preserve_default=False,
         ),
     ]
