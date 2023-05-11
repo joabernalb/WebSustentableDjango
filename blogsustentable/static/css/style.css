@@ -245,8 +245,22 @@ overflow-x: hidden;
 }
 
 #noticiatit{
-  color: #ff0000;
+  color: #ffffff;
   text-decoration: none;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+#textnoticia{
+  text-align: justify;
+}
+
+.marco {
+  border: 4px solid #ddd; /* Ancho y color del borde */
+  background-color: #429af1; /* Color de fondo */
+  padding: 20px; /* Espacio dentro del marco */
+  margin-bottom: 20px; /* Espacio debajo del marco */
+  border-radius: 5px;
 }
 
 
