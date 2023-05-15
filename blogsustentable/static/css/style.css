@@ -249,10 +249,12 @@ overflow-x: hidden;
   text-decoration: none;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
+  display: block;
 }
 
 #textnoticia{
   text-align: justify;
+  display: block;
 }
 
 .marco {
@@ -261,6 +263,7 @@ overflow-x: hidden;
   padding: 20px; /* Espacio dentro del marco */
   margin-bottom: 20px; /* Espacio debajo del marco */
   border-radius: 5px;
+  display: block;
 }
 
 
@@ -271,7 +274,7 @@ overflow-x: hidden;
 .imagenoticia{
   max-width: 100%;
   height: auto;
-
+  display: block;
 }
 
 
